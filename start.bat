@@ -1,1 +1,1 @@
-node rpc.js
+node index.js

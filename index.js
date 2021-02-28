@@ -1,6 +1,6 @@
-var rpc = require("discord-rpc") // require the discord-rpc package
+const rpc = require("discord-rpc") // require the discord-rpc package
 const client = new rpc.Client({ transport: 'ipc' }) // new rpc client
-let clientName = 'FNBRChris-RPC' // your name which is a var which is used in the log when it goes online
+var clientName = 'FNBRChris-RPC' // your name which is a var which is used in the log when it goes online
 client.on('ready', () => {
 client.request('SET_ACTIVITY', {
 pid: process.pid,
